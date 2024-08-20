@@ -1,19 +1,19 @@
 @import '_mixins';
+
 .main{
     padding-top: .6rem;
-    background-color: #373737;
-    // height: 100vh;
+    background-color: $blacky;
     width: 100%;
     &__line{
         height: .1rem;
         width: 100%;
-        background-color: #ccddff;
+        background-color: $white;
         margin-bottom: .4rem;
     }
     &__box{
         width: 100%;
-        background-color: #ccddff;
-        height: 7.8rem;
+        background-color: $white;
+        height: 2.8rem;
     }
     &__wrapper{
         padding-top: 4rem;
@@ -21,24 +21,22 @@
         margin: auto;
     }
     &__months{
-        // background-color: antiquewhite;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-
-        // align-content: center;
-        // justify-content: center;
-
-        // justify-items: center;
-        // align-items: center;
-
-        // place-content: center;
-
-        // @include flexible (row, nowrap, space-between, center);
+        grid-template-columns: repeat(1, 1fr);
+        @include respond-above(sm) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include respond-above(md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include respond-above(xl) {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
     &__month{
         margin-top: .4rem;
         padding: .5rem 1rem 1rem;
-        background-color: #ccddff;
+        //background-color: $white;
         border-radius: 3rem;
         margin-right: 4rem;
         margin-bottom: 6rem;
@@ -50,7 +48,7 @@
         padding-bottom: 2rem;
     }
     &__day.enunciate.grey{
-        color: #ccddff;
+        color: $white;
     }
     &__day.grey{
         color: #373737;
@@ -75,7 +73,7 @@
         color: white;
     }
     &__day.enunciate{
-        color: #373737;
+        color: $lightgray; //#373737;
         text-align: center;
         margin-bottom: 1rem;
     }
