@@ -26,6 +26,7 @@ function getDays( month_number ){
             return 28;
     }
 }
+
 function eachMonth( month_number){
     // Quiero acceder al nombre de cada mes por su index.
     let nombre_mes = months[ month_number ];
@@ -59,55 +60,16 @@ function eachMonth( month_number){
     str_html_cada_mes = str_html_cada_mes + '</ul></div>';
     return str_html_cada_mes;
 }
-// console.log( 'mira', eachMonth( 3 ) );
-// let mes0 = eachMonth(1);
-// pintaMe( mes0 );
+
 let eachmes = "";
 
-// eachMonth( i );
-// eachMonth( i + 1)
 for( let i = 0; i < months.length; i++ ){
     eachmes = eachmes + eachMonth( i );
     console.log(eachmes);
 }
 pintaMe( eachmes );
 
-
-
-
-
 function pintaMe(parametro){
     let nodoPainting = document.querySelector( '#painting' );
     nodoPainting.innerHTML = parametro;
 }
-// for( let i = 0; i < months.length; i++ ){
-//     mes0 = pintaMe(months[i]);
-// }
-// // Array con dias de cada mes:
-// console.log( 'mira', eachMonth( 3 ) );
-
-// // Quiero iuna función que me recorra todos los dias de cada mes desde donde acabó el mes anterior
-// let everyMonth = []; 
-// for( let i = 1; i <= limiteDeDias; i++ ){
-// console.log( months[ i ]);
-
-// console.log( "Pinto el dia ", i );
-// }
-// return everyMonth;
-
-
-
-// Pintar 
-// let str_html = '';
-// let str_html = '<div class="main__months" id="months"></div><div class="main__months"><div class="main__month"><h2 class="main__h2">January</h2><ul class="main__weekdays"><li class="main__day enunciate">Mon</li><li class="main__day enunciate">Tue</li><li class="main__day enunciate">Wed</li><li class="main__day enunciate">Thu</li><li class="main__day enunciate">Fri</li><li class="main__day enunciate">Sat</li><li class="main__day enunciate">Sun</li>
-
-
-
-
-// str_html = str_html + '<li class="main__day">' + i + '</li>';
-
-// function pintaMe(){
-//     let nodoPainting = document.querySelector( '#painting' );
-//     nodoPainting.innerHTML = '';
-// }
-// pintaMe(i);
