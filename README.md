@@ -6,21 +6,20 @@ Pequeño proyecto para el módulo de Desarrollo Web en Trazos. Se tarta de una p
 Para crear este proyecto he usado:
 * HTML
 * CSS
-* SASS
+* SCSS
 * Javascript
-* Typescript
-* jQuery
+* Bootstrap
 * Metodología BEM
 
 ## Autor ✒️
 **Amanda Tirado Anula**
 
-* [LinkedIn](www.linkedin.com/in/amandatiradoanula)
+* [LinkedIn](https://www.linkedin.com/in/amandatiradoanula)
 * [Behance](https://www.behance.net/amandatiradoanula)
-* [Porfolio web](http://www.amandatirado.com)
+* [Porfolio web](https://www.amandatirado.es/)
 
 ## Ver ejemplo en vivo 
-- [Ver Demo](http://amandatirado.com/practicas/calendART/index.html)
+- <a href="https://amanda-tirado.github.io/calendar-js/" target="_blank">Ver Demo</a>
 
 ## Contratación
 Si quieres contratarme puedes escribirme a amandatiradoanula@gmail.com para consultas.
