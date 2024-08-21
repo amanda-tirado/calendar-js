@@ -47,6 +47,10 @@ p a {
   display: inline;
 }
 
+ul {
+  padding-left: 0;
+}
+
 li {
   list-style-type: none;
 }
@@ -172,13 +176,19 @@ body {
 }
 .main__box {
   width: 100%;
-  background-color: #fafafa;
+  background-color: #272727;
   height: 2.8rem;
+  display: none;
 }
 .main__wrapper {
-  padding-top: 4rem;
-  width: 90%;
+  padding-top: 1rem;
+  width: 100%;
   margin: auto;
+}
+@media (min-width: 576px) {
+  .main__wrapper {
+    padding-top: 3rem;
+  }
 }
 .main__months {
   display: -ms-grid;
@@ -205,11 +215,9 @@ body {
   }
 }
 .main__month {
-  margin-top: 0.4rem;
-  padding: 0.5rem 1rem 1rem;
-  border-radius: 3rem;
-  margin-right: 4rem;
-  margin-bottom: 6rem;
+  padding: 0.5rem 1rem;
+  width: 90%;
+  margin: auto;
 }
 .main__month.grey {
   background-color: white;
@@ -253,7 +261,7 @@ body {
 /* FOOTER */
 .footer {
   padding: 2rem 0;
-  background-color: #fafafa;
+  background-color: #272727;
 }
 .footer__wrapper {
   display: -webkit-box;
@@ -306,7 +314,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  color: #1b1f24;
+  color: #fafafa;
   font-size: 20px;
 }
 .footer__name {
@@ -352,16 +360,18 @@ body {
 .footer__phone {
   font-weight: 500;
   font-size: 16px;
+  color: #fafafa;
 }
 .footer__phone:hover {
-  color: #d31c92;
+  color: #1b1f24;
 }
 .footer__email {
   font-weight: 300;
   font-size: 16px;
+  color: #fafafa;
 }
 .footer__email:hover {
-  color: #d31c92;
+  color: #1b1f24;
 }
 .footer__social-media {
   display: -webkit-box;
@@ -424,6 +434,6 @@ body {
 }
 
 body {
-  background-color: white;
+  background-color: #272727;
   font-family: sans-serif;
 }

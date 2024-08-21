@@ -1,6 +1,6 @@
 .footer{
     padding: 2rem 0;
-    background-color: $white;
+    background-color: $blacky;
     &__wrapper{
         @include flexible (column, nowrap, center, center);
         flex-direction: column-reverse;
@@ -16,7 +16,7 @@
         flex-flow: row;
         align-items: flex-end;
         justify-content: flex-start;
-        color: $ppal;
+        color: $white; //$blacky;
         font-size: 20px;
     }
     &__name{
@@ -42,15 +42,17 @@
     &__phone{
         font-weight: 500;
         font-size: 16px;
+        color: $white; //$primary;
         &:hover{
-            color: $primary;
+            color: $ppal; //$primary;
         }
     }
     &__email{
         font-weight: 300;
         font-size: 16px;
+        color: $white; //$primary;
         &:hover{
-            color: $primary;
+            color: $ppal; //$primary;
         }
     }
     &__social-media{
@@ -71,7 +73,7 @@
         border-radius: 11px;
         &:hover{
             transform: scale(1.2);
-            //background-color: $ppal;
+            //background-color: $blacky;
             .footer__link i::before{
                 //color: $white;
                 color: $primary; //$blacky;

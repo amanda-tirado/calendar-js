@@ -12,13 +12,17 @@
     }
     &__box{
         width: 100%;
-        background-color: $white;
+        background-color: $blacky;
         height: 2.8rem;
+        display: none;
     }
     &__wrapper{
-        padding-top: 4rem;
-        width: 90%;
+        padding-top: 1rem;
+        width: 100%;
         margin: auto;
+        @include respond-above(sm) {
+            padding-top: 3rem;
+        }
     }
     &__months{
         display: grid;
@@ -34,12 +38,9 @@
         }
     }
     &__month{
-        margin-top: .4rem;
-        padding: .5rem 1rem 1rem;
-        //background-color: $white;
-        border-radius: 3rem;
-        margin-right: 4rem;
-        margin-bottom: 6rem;
+        padding: .5rem 1rem;
+        width: 90%;
+        margin: auto;
     }
     &__month.grey{
         background-color: white;
